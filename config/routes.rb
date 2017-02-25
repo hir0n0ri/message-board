@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   root 'messages#index'
+  
+  #get "test" , to: 'messages#test'
+  #post "message" , to: "messages#create"
   resources :messages , except: [:index, :new]
 end
 
